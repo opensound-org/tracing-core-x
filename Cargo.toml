@@ -1,0 +1,29 @@
+[package]
+name = "template-rs"
+authors = ["29 <791603901@qq.com>"]
+version = "0.0.1"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+keywords = ["template"]
+categories = ["multimedia::audio"]
+repository = "https://github.com/opensound-org/template-rs"
+homepage = "https://github.com/opensound-org/template-rs"
+description = """
+Template for Rust repositories used by `opensound-org`.
+"""
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# Because we used `rustc-check-cfg` in build script
+# 因为我们在构建脚本中使用了`rustc-check-cfg`
+# https://blog.rust-lang.org/2024/05/06/check-cfg.html
+rust-version = "1.80.0"
+
+[package.metadata.docs.rs]
+all-features = true
+
+[dependencies]
+
+[build-dependencies]
+version_check = "0.9.5"
