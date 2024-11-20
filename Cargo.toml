@@ -1,15 +1,15 @@
 [package]
-name = "template-rs"
+name = "tracing-core-x"
 authors = ["29 <791603901@qq.com>"]
 version = "0.0.1"
 license = "MIT/Apache-2.0"
 readme = "README.md"
-keywords = ["template"]
-categories = ["multimedia::audio"]
-repository = "https://github.com/opensound-org/template-rs"
-homepage = "https://github.com/opensound-org/template-rs"
+keywords = ["serde", "send", "sync", "logging", "profiling"]
+categories = ["concurrency", "data-structures", "development-tools::debugging", "development-tools::profiling", "encoding"]
+repository = "https://github.com/opensound-org/tracing-core-x"
+homepage = "https://github.com/opensound-org/tracing-core-x"
 description = """
-Template for Rust repositories used by `opensound-org`.
+🚧 Some extensions to the `tracing-core` data structures (WIP, nothing usable for now).
 """
 edition = "2021"
 
@@ -24,6 +24,10 @@ rust-version = "1.80.0"
 all-features = true
 
 [dependencies]
+serde = { version = "1.0.215", features = ["derive"] }
+tracing-core = "0.1.32"
+
+[dev-dependencies]
 
 [build-dependencies]
 version_check = "0.9.5"
