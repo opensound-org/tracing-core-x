@@ -28,6 +28,9 @@ serde = { version = "1.0.215", features = ["derive"] }
 tracing-core = "0.1.32"
 
 [dev-dependencies]
+rand = "0.8.5"
+serde_json = "1.0.133"
+tokio = { version = "1.4.11", features = ["full"] }
 
 [build-dependencies]
 version_check = "0.9.5"
