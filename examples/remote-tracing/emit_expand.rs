@@ -58,7 +58,7 @@ fn emit_span() -> tracing::Span {
             ])
         })
     } else {
-        tracing::__macro_support::__disabled_span(__CALLSITE.metadata())
+        tracing::Span::none()
     }
 }
 
